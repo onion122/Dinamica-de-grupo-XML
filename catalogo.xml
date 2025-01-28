@@ -1,4 +1,23 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE catalogo [
+  <!ELEMENT catalogo (producto+)>
+  <!ELEMENT producto (id, nombre, tipo, marca, precio, colores, materiales, temporada, tallas, cuidado, popularidad, imagen)>
+  <!ELEMENT id (#PCDATA)>
+  <!ELEMENT nombre (#PCDATA)>
+  <!ELEMENT tipo (#PCDATA)>
+  <!ELEMENT marca (#PCDATA)>
+  <!ELEMENT precio (#PCDATA)>
+  <!ELEMENT colores (color+)>
+  <!ELEMENT color (#PCDATA)>
+  <!ELEMENT materiales (material+)>
+  <!ELEMENT material (#PCDATA)>
+  <!ELEMENT temporada (#PCDATA)>
+  <!ELEMENT tallas (talla+)>
+  <!ELEMENT talla (#PCDATA)>
+  <!ELEMENT cuidado (#PCDATA)>
+  <!ELEMENT popularidad (#PCDATA)>
+  <!ELEMENT imagen (#PCDATA)>
+]>
 <catalogo>
 <producto>
     <id>001</id>
