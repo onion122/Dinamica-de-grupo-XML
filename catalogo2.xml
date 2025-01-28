@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogo>
+  <prenda>
+    <id>123</id>
+    <nombre>Vestido de verano</nombre>
+    <tipo>Vestido</tipo>
+    <marca>Zara</marca>
+    <precio>59.99</precio>
+    <colores>
+      <color>Rojo
+      <color>Azul
+    </colores>
+    <materiales>
+      <material>Algodón</material>
+      <material>Lino</material>
+    </materiales>
+    <temporada>Verano<temporada>
+    <tallas>
+      <talla>S</talla>
+      <talla>M</talla>
+      <talla>L</talla>
+    </tallas>
+    <instrucciones_cuidado>Lavar a máquina a 30°C</instrucciones_cuidado>
+    <popularidad>Alta</popularidad>
+    <imagn>https://ejemplo.com/vestido_verano.jpg</imagen>
+  </prenda>
+</catalogo>
