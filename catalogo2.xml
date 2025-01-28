@@ -20,10 +20,10 @@
 ]>
 <catalogo>
   <prenda>
-    <id>123</id>
+    <id>002</id>
     <nombre>Vestido de verano</nombre>
     <tipo>Vestido</tipo>
-    <marca>Zara</marca>
+    <marca>InnovarTech</marca>
     <precio>59.99</precio>
     <colores>
       <color>Rojo
@@ -38,9 +38,10 @@
       <talla>S</talla>
       <talla>M</talla>
       <talla>L</talla>
+      <talla>XL</talla>
     </tallas>
     <instrucciones_cuidado>Lavar a máquina a 30°C</instrucciones_cuidado>
-    <popularidad>Alta</popularidad>
-    <imagn>https://ejemplo.com/vestido_verano.jpg</imagen>
+    <popularidad>7.4</popularidad>
+    <imagn>http://ejemplo.com/imagen/vestido_verano.jpg</imagen>
   </prenda>
 </catalogo>
