@@ -1,46 +1,54 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!-- Declaración del XML, la versión, la codificación, y si es autónomo -->
+
 <!DOCTYPE catalogo [
-  <!ELEMENT catalogo (producto+)>
-  <!ELEMENT producto (id, nombre, tipo, marca, precio, colores, materiales, temporada, tallas, cuidado, popularidad, imagen)>
-  <!ELEMENT id (#PCDATA)>
-  <!ELEMENT nombre (#PCDATA)>
-  <!ELEMENT tipo (#PCDATA)>
-  <!ELEMENT marca (#PCDATA)>
-  <!ELEMENT precio (#PCDATA)>
-  <!ELEMENT colores (color+)>
-  <!ELEMENT color (#PCDATA)>
-  <!ELEMENT materiales (material+)>
-  <!ELEMENT material (#PCDATA)>
-  <!ELEMENT temporada (#PCDATA)>
-  <!ELEMENT tallas (talla+)>
-  <!ELEMENT talla (#PCDATA)>
-  <!ELEMENT cuidado (#PCDATA)>
-  <!ELEMENT popularidad (#PCDATA)>
-  <!ELEMENT imagen (#PCDATA)>
+  <!-- Definición de la estructura del documento XML con DTD -->
+  <!ELEMENT catalogo (producto+)> <!-- Un catálogo contiene 1 o más productos -->
+  <!ELEMENT producto (id, nombre, tipo, marca, precio, colores, materiales, temporada, tallas, cuidado, popularidad, imagen)> <!-- Un producto tiene estos elementos -->
+  <!ELEMENT id (#PCDATA)> <!-- ID del producto -->
+  <!ELEMENT nombre (#PCDATA)> <!-- Nombre del producto -->
+  <!ELEMENT tipo (#PCDATA)> <!-- Tipo de producto, si es una camiseta, pantalón, etc... -->
+  <!ELEMENT marca (#PCDATA)> <!-- Marca del producto -->
+  <!ELEMENT precio (#PCDATA)> <!-- Precio en la tienda -->
+  <!ELEMENT colores (color+)> <!-- Colores disponibles, que puede haber más de uno -->
+  <!ELEMENT color (#PCDATA)> <!-- Color del producto -->
+  <!ELEMENT materiales (material+)> <!-- Materiales utilizados para el producto -->
+  <!ELEMENT material (#PCDATA)> <!-- Material del producto -->
+  <!ELEMENT temporada (#PCDATA)> <!-- Temporada cuando sale esta prenda -->
+  <!ELEMENT tallas (talla+)> <!-- Tallas disponibles -->
+  <!ELEMENT talla (#PCDATA)> <!-- Talla específica -->
+  <!ELEMENT cuidado (#PCDATA)> <!-- Instrucciones de cuidado -->
+  <!ELEMENT popularidad (#PCDATA)> <!-- Popularidad o calificación del producto -->
+  <!ELEMENT imagen (#PCDATA)> <!-- URL de la imagen del producto -->
 ]>
+
 <catalogo>
-<producto>
-    <id>001</id>
-    <nombre>Camiseta Básica</nombre>
-    <tipo>Camiseta</tipo>
-    <marca>InnovarTech</marca>
-    <precio>15.99</precio>
+  <!-- Inicio del catálogo -->
+  <producto>
+    <!-- Información del producto -->
+    <id>001</id> <!-- ID único del producto -->
+    <nombre>Camiseta Básica</nombre> <!-- Nombre del producto -->
+    <tipo>Camiseta</tipo> <!-- Tipo de prenda -->
+    <marca>InnovarTech</marca> <!-- Marca del producto -->
+    <precio>15.99</precio> <!-- Precio del producto -->
     <colores>
-        <color>Blanco</color>
-        <color>Negro</color>
+      <!-- Colores disponibles -->
+      <color>Blanco</color>
+      <color>Negro</color>
     </colores>
     <materiales>
-        <material>Algodón</material>
+      <!-- Materiales del producto -->
+      <material>Algodón</material>
     </materiales>
-    <temporada>Primavera</temporada>
+    <temporada>Primavera</temporada> <!-- Temporada -->
     <tallas>
-        <talla>S</talla>
-        <talla>M</talla>
-        <talla>L</talla>
+      <!-- Tallas disponibles -->
+      <talla>S</talla>
+      <talla>M</talla>
+      <talla>L</talla>
     </tallas>
-    <cuidado>Lavar a máquina a 30°C</cuidado>
-    <popularidad>4.5</popularidad>
-    <imagen>http://ejemplo.com/imagen/camiseta_basica.jpg</imagen>
-</producto>
-
+    <cuidado>Lavar a máquina a 30°C</cuidado> <!-- Instrucción de cuidado -->
+    <popularidad>4.5</popularidad> <!-- Valoración del producto -->
+    <imagen>http://ejemplo.com/imagen/camiseta_basica.jpg</imagen> <!-- Enlace de la imagen -->
+  </producto>
 </catalogo>
