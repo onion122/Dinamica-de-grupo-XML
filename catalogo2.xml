@@ -26,8 +26,8 @@
     <marca>InnovarTech</marca>
     <precio>59.99</precio>
     <colores>
-      <color>Rojo
-      <color>Azul
+      <color>Rojo</color>
+      <color>Azul</color>
     </colores>
     <materiales>
       <material>Algodón</material>
@@ -40,8 +40,8 @@
       <talla>L</talla>
       <talla>XL</talla>
     </tallas>
-    <instrucciones_cuidado>Lavar a máquina a 30°C</instrucciones_cuidado>
+    <cuidado>Lavar a máquina a 30°C</cuidado>
     <popularidad>7.4</popularidad>
-    <imagn>http://ejemplo.com/imagen/vestido_verano.jpg</imagen>
+    <imagen>http://ejemplo.com/imagen/vestido_verano.jpg</imagen>
   </prenda>
 </catalogo>
