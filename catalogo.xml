@@ -1,4 +1,27 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <catalogo>
+<producto>
+    <id>001</id>
+    <nombre>Camiseta Básica</nombre>
+    <tipo>Camiseta</tipo>
+    <marca>InnovarTech</marca>
+    <precio>15.99</precio>
+    <colores>
+        <color>Blanco</color>
+        <color>Negro</color>
+    </colores>
+    <materiales>
+        <material>Algodón</material>
+    </materiales>
+    <temporada>Primavera</temporada>
+    <tallas>
+        <talla>S</talla>
+        <talla>M</talla>
+        <talla>L</talla>
+    </tallas>
+    <cuidado>Lavar a máquina a 30°C</cuidado>
+    <popularidad>4.5</popularidad>
+    <imagen>http://ejemplo.com/imagen/camiseta_basica.jpg</imagen>
+</producto>
 
 </catalogo>
