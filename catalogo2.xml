@@ -1,47 +1,56 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!-- Declaración del XML, especificando la versión, codificación y si es autónomo -->
+
 <!DOCTYPE catalogo [
-  <!ELEMENT catalogo (prenda+)>
-  <!ELEMENT prenda (id, nombre, tipo, marca, precio, colores, materiales, temporada, tallas, instrucciones_cuidado, popularidad, imagen)>
-  <!ELEMENT id (#PCDATA)>
-  <!ELEMENT nombre (#PCDATA)>
-  <!ELEMENT tipo (#PCDATA)>
-  <!ELEMENT marca (#PCDATA)>
-  <!ELEMENT precio (#PCDATA)>
-  <!ELEMENT colores (color+)>
-  <!ELEMENT color (#PCDATA)>
-  <!ELEMENT materiales (material+)>
-  <!ELEMENT material (#PCDATA)>
-  <!ELEMENT temporada (#PCDATA)>
-  <!ELEMENT tallas (talla+)>
-  <!ELEMENT talla (#PCDATA)>
-  <!ELEMENT instrucciones_cuidado (#PCDATA)>
-  <!ELEMENT popularidad (#PCDATA)>
-  <!ELEMENT imagen (#PCDATA)>
+  <!-- Definición de la estructura del documento XML mediante DTD -->
+  <!ELEMENT catalogo (producto+)> <!-- Un catálogo contiene una o más prendas -->
+  <!ELEMENT producto (id, nombre, tipo, marca, precio, colores, materiales, temporada, tallas, cuidado, popularidad, imagen)> <!-- Cada prenda tiene estos elementos -->
+  <!ELEMENT id (#PCDATA)> <!-- ID único de la prenda -->
+  <!ELEMENT nombre (#PCDATA)> <!-- Nombre descriptivo de la prenda -->
+  <!ELEMENT tipo (#PCDATA)> <!-- Categoría o tipo de prenda, como vestido, pantalón, etc. -->
+  <!ELEMENT marca (#PCDATA)> <!-- Marca de la prenda -->
+  <!ELEMENT precio (#PCDATA)> <!-- Precio de la prenda en formato numérico -->
+  <!ELEMENT colores (color+)> <!-- Colores disponibles, uno o más -->
+  <!ELEMENT color (#PCDATA)> <!-- Color específico -->
+  <!ELEMENT materiales (material+)> <!-- Materiales principales, uno o más -->
+  <!ELEMENT material (#PCDATA)> <!-- Material específico -->
+  <!ELEMENT temporada (#PCDATA)> <!-- Temporada en la que se usa la prenda -->
+  <!ELEMENT tallas (talla+)> <!-- Tallas disponibles -->
+  <!ELEMENT talla (#PCDATA)> <!-- Talla específica -->
+  <!ELEMENT cuidado (#PCDATA)> <!-- Instrucciones de cuidado de la prenda -->
+  <!ELEMENT popularidad (#PCDATA)> <!-- Puntuación de popularidad de la prenda -->
+  <!ELEMENT imagen (#PCDATA)> <!-- URL que apunta a la imagen representativa de la prenda -->
 ]>
+
 <catalogo>
-  <prenda>
-    <id>002</id>
-    <nombre>Vestido de verano</nombre>
-    <tipo>Vestido</tipo>
-    <marca>InnovarTech</marca>
-    <precio>59.99</precio>
+  <!-- Inicio del catálogo -->
+  <producto>
+    <!-- Información de una prenda -->
+    <id>002</id> <!-- Identificador único de la prenda -->
+    <nombre>Vestido de verano</nombre> <!-- Nombre descriptivo de la prenda -->
+    <tipo>Vestido</tipo> <!-- Tipo o categoría de la prenda -->
+    <marca>InnovarTech</marca> <!-- Marca de la prenda -->
+    <precio>59.99</precio> <!-- Precio de la prenda -->
     <colores>
+      <!-- Colores disponibles -->
       <color>Rojo</color>
       <color>Azul</color>
     </colores>
     <materiales>
+      <!-- Materiales principales -->
       <material>Algodón</material>
       <material>Lino</material>
     </materiales>
-    <temporada>Verano<temporada>
+    <temporada>Verano</temporada> <!-- Temporada sugerida para la prenda -->
     <tallas>
+      <!-- Tallas disponibles -->
       <talla>S</talla>
       <talla>M</talla>
       <talla>L</talla>
       <talla>XL</talla>
     </tallas>
-    <cuidado>Lavar a máquina a 30°C</cuidado>
-    <popularidad>7.4</popularidad>
-    <imagen>http://ejemplo.com/imagen/vestido_verano.jpg</imagen>
-  </prenda>
+    <cuidado>Lavar a máquina a 30°C</cuidado> <!-- Indicaciones de cuidado -->
+    <popularidad>7.4</popularidad> <!-- Puntuación de popularidad basada en reseñas -->
+    <imagen>http://ejemplo.com/imagen/vestido_verano.jpg</imagen> <!-- URL de la imagen representativa -->
+  </producto>
 </catalogo>
